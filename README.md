@@ -111,3 +111,14 @@ See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more inform
 ## License
 
 This library is licensed under the MIT-0 License. See the LICENSE file.
+
+
+Clean up
+To avoid incurring future changes, you should clean up the resources that you created.
+
+Empty the Amazon S3 bucket:
+Delete the CloudFormation stack (CodeDeployStack) from the AWS console.
+Delete the GitHub Secret (‘IAMROLE_GITHUB’)
+Go to the repository settings on GitHub Page.
+Select Secrets under Actions.
+Select IAMROLE_GITHUB, and delete it.
